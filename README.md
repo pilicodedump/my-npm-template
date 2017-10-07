@@ -2,9 +2,6 @@
 
 ## Table of Contents
 
-[1. Creating the repository]()
-[2. Initializing the npm package]()
-
 1. [Creating the repository](#creating-the-repository)
 2. [Initializing the npm package](#initializing-the-npm-package)
 

@@ -1,0 +1,19 @@
+{
+  "name": "my-npm-template",
+  "version": "1.0.0",
+  "description": "A template for creating npm packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pilarArr/my-npm-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pilarArr/my-npm-template/issues"
+  },
+  "homepage": "https://github.com/pilarArr/my-npm-template#readme"
+}

@@ -4,7 +4,53 @@
   "description": "A template for creating npm packages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d build --ignore '**/*.test.js'",
+    "dev": "babel src -d build --ignore '**/*.test.js' --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jest": "^21.2.1",
+    "np": "^2.16.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "node": true
+    },
+    "globals": {
+      "expect": false
+    },
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "no-tabs": [
+        "error"
+      ],
+      "no-mixed-spaces-and-tabs": [
+        "error"
+      ],
+      "import/no-unresolved": 0,
+      "import/no-extraneous-dependencies": 0,
+      "import/extensions": 0,
+      "no-underscore-dangle": [
+        "error"
+      ],
+      "class-methods-use-this": 0
+    }
   },
   "repository": {
     "type": "git",
